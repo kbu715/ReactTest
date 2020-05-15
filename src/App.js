@@ -1,37 +1,37 @@
-/* import React, { Component } from 'react'; //React 라이브러리를 끌고온다 Component 상속관계이다
+//  import React, { Component } from 'react'; //React 라이브러리를 끌고온다 Component 상속관계이다
 
-class App extends Component {
-  render() {
-    return ( //return() 이 사이에서만 작업을 한다.
-      <div>
-        <h1>호랑이</h1>
-        <h1>사자</h1>
-      </div>
-    );
-  }
-}
+// class App extends Component {
+//   render() {
+//     return ( //return() 이 사이에서만 작업을 한다.
+//       <>
+//         <h1>호랑이</h1>
+//         <h1>사자</h1>
+//       </>
+//     );
+//   }
+// }
 
-export default App; */
-
-
+// export default App; 
 
 
-/* 
-import React, { Component, Fragment } from 'react'; //React 라이브러리를 끌고온다 Component 상속관계이다
 
-class App extends Component { //div대신 Fragment 쓸 수 있다.
-  render() {
-    return ( //return() 이 사이에서만 작업을 한다.
-      <Fragment>   
-        <h1> 호랑이</ h1> 
-        <h1>사자</h1>
-      </Fragment>      
-    );
-  }
-}
-//div는 개발자모드 Elements 상에 나타나지만, Fragment는 소스코드에 나타나지 않는다
-//나중에 다른 파일에 삽입하다보면 div가 너무 많아져서 이럴때 fragment를 사용한다.
-export default App;  */
+
+
+// import React, { Component, Fragment } from 'react'; //React 라이브러리를 끌고온다 Component 상속관계이다
+
+// class App extends Component { //div대신 Fragment 쓸 수 있다.
+//   render() {
+//     return ( //return() 이 사이에서만 작업을 한다.
+//       <Fragment>   
+//         <h1> 호랑이</ h1> 
+//         <h1>사자</h1>
+//       </Fragment>      
+//     );
+//   }
+// }
+// //div는 개발자모드 Elements 상에 나타나지만, Fragment는 소스코드에 나타나지 않는다
+// //나중에 다른 파일에 삽입하다보면 div가 너무 많아져서 이럴때 fragment를 사용한다.
+// export default App;  
 
 
 
@@ -174,6 +174,10 @@ export default App;  */
 //   }
 // }
 // export default App;
+
+
+
+
 
 
 
@@ -485,7 +489,7 @@ export default App;  */
 
 // //안돼는 코드 먼저 보여준 거
 // import React, { Component } from 'react';
-// import { logDOM } from '@testing-library/react';
+
 // class App extends Component {
 //   //컴포넌트 하나당 state가 하나씩 있다.
 //   n1 = 100
@@ -520,6 +524,10 @@ export default App;  */
 //   }
 // }
 // export default App;
+
+
+
+
 
 
 
@@ -560,6 +568,10 @@ export default App;  */
 // }
 
 // export default App;
+
+
+
+
 
 
 
@@ -776,18 +788,18 @@ export default App;  */
 // }
 // }
 
-// const App=()=>(
-//     <div>
-//       <Com1 />
-//       <Com2 />
-//       <Com3 />
-//       <Com4 />
-//       <Com5 name="호랑이5" />
-//       <Com6 name="호랑이6" />
-//       <Com7 name="호랑이7" />
-//       <Com8 name="호랑이8" />
-//     </div>
-//   );
+// // const App=()=>(
+// //     <div>
+// //       <Com1 />
+// //       <Com2 />
+// //       <Com3 />
+// //       <Com4 />
+// //       <Com5 name="호랑이5" />
+// //       <Com6 name="호랑이6" />
+// //       <Com7 name="호랑이7" />
+// //       <Com8 name="호랑이8" />
+// //     </div>
+// //   );
 
 
 
@@ -826,22 +838,22 @@ export default App;  */
 // //     );
   
 // // }
-// // class App extends Component {
-// //   render() {
-// //     return (
-// //       <div>
-// //         <Com1 />
-// //         <Com2 />
-// //         <Com3 />
-// //         <Com4 />
-// //         <Com5 name="호랑이5" />
-// //         <Com6 name="호랑이6" />
-// //         <Com7 name="호랑이7" />
-// //         <Com8 name="호랑이8" />
-// //       </div>
-// //     );
-// //   }
-// // }
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Com1 />
+//         <Com2 />
+//         <Com3 />
+//         <Com4 />
+//         <Com5 name="호랑이5" />
+//         <Com6 name="호랑이6" />
+//         <Com7 name="호랑이7" />
+//         <Com8 name="호랑이8" />
+//       </div>
+//     );
+//   }
+// }
 // export default App;
 
 
@@ -900,7 +912,7 @@ class Bpp extends Component {
 }
 
 const Cpp=()=>{
-    const[num, setNum] = useState(100) //num은 변수고 setNum은 함수
+    const[num, setNum] = useState(100) //num은 변수고 setNum은 함수 //useState() 안에 초기값 설정
     const[name, setName] = useState("호랑이")
     const f1 = ()=>{
         setNum(num+1)
