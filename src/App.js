@@ -1725,7 +1725,7 @@
 
 // export default App;
 
-
+// import React, { useState } from 'react';
 
 // const Bpp = () => {
 //   const [names, setNames] = useState([
@@ -1749,12 +1749,12 @@
   
 // };
 
-
+// export default Bpp;
 
 
 
 // //3 :리스트가 있는데 리스트 클릭하면 삭제가 되버린다.
-
+// import React, { useState } from 'react';
 
 // const Cpp = () => {
 //   const [names, setNames] = useState([
@@ -1788,6 +1788,8 @@
 //   );
 // };
 
+
+// export default Cpp;
 
 
 
@@ -1833,7 +1835,6 @@
 //   const [msg, setMsg] = useState('')
   
   
-//   // const[animal, setAnimal] = useState('');
   
 //   const tiger = React.createRef()
   
@@ -2014,8 +2015,8 @@
 // const App = () => {
 //   const [list, setList] = useState([10])
 //   const f1 = ()=>{
-//     setList(list)
-//     // setList([...list,10])
+//     //setList(list)
+//      setList([...list,10])
 //     let sum = 0;
 //     for (const i of list) {
 //       sum+=i;
@@ -2103,14 +2104,14 @@
 
 
 
-import React from 'react';
-import Average from './Average';
+// import React from 'react';
+// import Average from './Average';
 
-const App = () => {
-  return <Average />
-};
+// const App = () => {
+//   return <Average />
+// };
 
-export default App;
+// export default App;
 
 
 
